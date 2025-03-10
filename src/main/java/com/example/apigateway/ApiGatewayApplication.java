@@ -19,8 +19,8 @@ public class ApiGatewayApplication {
         return builder.routes()
                 .route("candidat",r->r.path("/candidats/**")
                         .uri("lb://Candidat4SAE8"))
-               /* .route("job",r->r.path("/jobs/**")
-                        .uri("lb://JobSAE8"))*/
+               .route("job",r->r.path("/jobs/**")
+                        .uri("lb://JobSAE8"))
                 .build();
     }
 
